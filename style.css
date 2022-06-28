@@ -391,7 +391,7 @@ button{
         align-items: center;
     }
 
-    .menu ul li{
+    .menu ul li:not(:nth-child(4)){
         transition: all 0.3s;
         cursor: pointer;
         text-decoration: inherit;
