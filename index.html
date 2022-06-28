@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Project tracking - intro</title>
+</head>
+<body>
+    <header class="header">
+        <div class="box-logo">
+           <a href="index.html"><img src="images/logo.svg" alt="logo"></a>  
+        </div>
+        <div class="hamb-menu">
+            <img src="images/icon-hamburger.svg" alt="icon hamburger menu" class="open mob">
+            <img src="images/icon-close.svg" alt="icon close menu" class="close mob">
+        </div>
+        <nav class="menu txt-upper">
+            <ul class="fs-100">
+                <li class="txt-very-dark ff-cond fw-bld ltr-spacing-1">Product</li>
+                <li class="txt-very-dark ff-cond fw-bld ltr-spacing-1">Features</li>
+                <li class="txt-very-dark ff-cond fw-bld ltr-spacing-1">Pricing</li>
+                <span class="line"></span>
+                <li class="txt-gr fw-bld ltr-spacing-1">Login</li>
+            </ul>
+        </nav>
+    </header>
+    <div class="main-bg">
+        <img src="images/illustration-devices.svg" alt="">
+    </div>
+
+
+    <main class="main-content">
+        <div class="info">
+            <span class="txt-upper txt-lite-gr bg-very-dark fw-bld ltr-spacing-1 fs-100">new</span>
+            <h4 class="txt-upper ff-cond txt-gr fs-200 ltr-spacing-4 fw-mdm in-block opacity-1">Monograph Dashboard</h4>
+        </div>
+        <div class="headline-body">
+            <h1 class="txt-upper txt-very-dark fs-400 m-bottom">Powerful insights <span>into your team</span></h1>
+            <p class="ff-norm txt-dark-gr fs-200">Project planning and time tracking <br> for agile teams</p>
+        </div>
+        <div class="cta-group">
+            <button class="ff-cond txt-upper bg-red txt-lite-gr fw-bld fs-50 cta ltr-spacing-1 fs-50">Schedule a demo</button>
+            <button class="txt-gr txt-upper ltr-spacing-2 fs-50 opacity-2">to see a preview</button>
+        </div>
+        
+    </main>
+    <div class="grey-shape bg-lite-gr"></div>
+
+    <script>
+
+        /*toggle menu (mobile)*/
+        let boxMenu = document.querySelector(".hamb-menu");
+        let btn = document.querySelector(".open");
+        let btn2 = document.querySelector(".close");
+        let menu = document.querySelector(".menu");
+
+        boxMenu.addEventListener("click", () => {
+             
+            btn.classList.toggle("open_close");
+            btn2.classList.toggle("close_open");
+            menu.classList.toggle("menu_open");
+            
+        });
+        
+    </script>
+</body>
+</html>
